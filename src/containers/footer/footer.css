@@ -1,0 +1,134 @@
+/* #666971 */
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-logo{
+    width: 25%;
+}
+
+.footer-logo img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.footer-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 2em;
+    /* justify-content: center; */
+}
+
+.footer-container-links{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 1em;
+}
+
+.footer-container-links p{
+    margin-left: 1.5em;
+}
+
+.footer-container-links p a{
+    color: var(--text-color-one);
+    font-size: 1.2rem;
+    font-family: var(--font-family);
+    font-weight: 400;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.footer-container-links p a:hover{
+    color: hsla(240, 7%, 94%, 0.8);
+}
+
+.footer-container-ltd{
+    color: #666971;
+    font-size: 1rem;
+    font-family: var(--font-family);
+}
+
+.footer-follow{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-follow p{
+    color: #666971;
+    font-size: 1.5rem;
+    font-family: var(--font-family);
+}
+
+.footer-follow-image{
+    width: 50%;
+}
+
+.footer-follow img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+@media screen and (max-width: 1050px) {
+    .footer-container-links p a{
+        font-size: 1rem;
+    }
+
+    .footer-container-ltd{
+        font-size: 0.8rem;
+    }
+
+    .footer-follow p{
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 990px) {
+    .footer-container-links p a{
+        font-size: 0.8rem;
+    }
+
+    .footer-container-ltd{
+        font-size: 0.5rem;
+    }
+
+    .footer-follow p{
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .footer-container-links p a{
+        font-size: 0.7rem;
+    }
+
+    .footer-container-ltd{
+        font-size: 0.4rem;
+    }
+
+    .footer-follow p{
+        font-size: 0.7rem;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .footer-container-links p a{
+        font-size: 0.6rem;
+    }
+
+    .footer-container-ltd{
+        font-size: 0.4rem;
+    }
+
+    .footer-follow p{
+        font-size: 0.6rem;
+    }
+}

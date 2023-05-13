@@ -1,0 +1,114 @@
+.team-container_profile{
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+}
+
+.team-container_profile-image{
+    width: 100%;
+    height: auto;
+    background-color: transparent;
+}
+
+.team-container_profile-image img{
+    width: 100%;
+    height: auto;
+}
+
+.team-container_profile-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    /* padding: 1em 1.5em; */
+    /* height: 100%; */
+    width: 100%;
+    height:auto;
+}
+
+.team-container_profile-content h3,
+.team-container_profile-content h4,
+.team-container_profile-content p,
+.team-container_profile-content-socials{
+    font-family: var(--font-family);
+    color: var(--text-color-two);
+}
+
+.team-container_profile-content-heads{
+    text-align: center;
+    margin: 2em auto 1em;
+}
+
+.team-container_profile-content h3{
+    font-size: 1.5em;
+}
+
+.team-container_profile-content h4{
+    font-size: 1em;
+}
+
+.team-container_profile-content p{
+    font-size: 0.8em;
+    text-align: justify;
+}
+
+.team-container_profile-content-socials{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1em;
+}
+
+.team-container_profile-content-socials img{
+    display: block;
+    width: 1.2em;
+    height: auto;
+    margin: 0 0.3em;
+}
+
+@media screen and (max-width: 990px){
+
+    .team-container_profile-content{
+        /* align-items: center;
+        justify-content: center; */
+        margin: auto;
+        text-align: center;
+        width: 120%;
+    }
+
+    .team-container_profile-content-socials img{
+        display: block;
+        width: 1.3em;
+        height: auto;
+        margin: 0 0.3em;
+    }
+
+    .team-container_profile-content h3{
+        font-size: 1.5em;
+    }
+
+    .team-container_profile-content h4{
+        font-size: 1em;
+    }
+
+    .team-container_profile-content p{
+        font-size: 1em;
+    }
+}
+
+@media screen and (max-width: 550px){
+    .team-container_profile-content h3{
+        font-size: 2em;
+    }
+
+    .team-container_profile-content h4{
+        font-size: 1em;
+    }
+
+    .team-container_profile-content p{
+        font-size: 1em;
+    }
+}

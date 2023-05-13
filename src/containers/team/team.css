@@ -1,0 +1,90 @@
+.team{
+    display: flex;
+    flex-direction: column;
+}
+
+.team-heading{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 5em;
+}
+
+.team-heading h2{
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 2em;
+    line-height: 2em;
+    margin-bottom: 0.5em;
+}
+
+.team-heading p{
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 1em;
+    line-height: 1em;
+}
+
+.team-container{
+    display: flex;
+}
+
+.team-container_group{
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2em;
+}
+
+@media screen and (max-width: 990px){
+    .team-container{
+        flex-direction: column;
+    }
+
+    .team-container_group{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .team-container_profile{
+        width: 100%;
+        height: auto;
+        margin: auto;
+    }
+
+    /* .team-container_group .team-container_profile-image{
+        width: 180px;
+    } */
+
+    .team-container_group .team-container_profile-content{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .team-container_group{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    /* .team-container_group .team-container_profile{
+        width: 100%;
+    } */
+
+    .team-container_profile{
+        width: 100%;
+    }
+
+    .team-heading{
+        margin-top: 8em;
+    }
+
+    .team-heading h2{
+        font-weight: 400;
+        font-size: 2em;
+        line-height: 1em;
+        margin-bottom: 0.5em;
+    }
+    
+    .team-heading p{
+        font-size: 0.8em;
+        line-height: 1.5em;
+    }
+}
